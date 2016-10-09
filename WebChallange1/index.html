@@ -21,36 +21,79 @@
 
     <div class="container">
         <div class="left-col">
-            <h1>Register Form</h1>
-                <form action="">
-                    <input type="text">
-                    <input type="password">
-                    <input type="passowrd">
-                    <input type="email">
-                    <select name="">
-                        <option value="Europe"></option>
-                        <option value="USA"></option>
-                        <option value="Azja"></option>
+            <div class="box">
+                <h1>Register Form</h1>
+                <form action="" class="sing-up">
+                    <input type="text" placeholder="Username" class="username">
+                    <input type="password" placeholder="Password" class="password">
+                    <input type="password" placeholder="Confirm Password" class="password">
+                    <input type="email" placeholder="Email" class="email">
+                    <select name="Your Location">
+                        <option value="Your Location">Your Location</option>
+                        <option value="Europe">Europe</option>
+                        <option value="USA">USA</option>
+                        <option value="Azja">Azja</option>
                     </select>
-                    <input type="checkbox">
+                    <div class="input-label">
+                        <input type="checkbox" id="terms-of-use">
+                        <label for="terms-of-use">I have read and accept the terms of use</label>
+                    </div>
+                    <button class="btn btn-big" type="submit">Sing up</button>
                 </form>
+            </div>
+
+            <div class="box">
             <h1>Send Email</h1>
-
-
+                <form action="" class="send-mail">
+                    <input type="text" placeholder="Your Name" class="username">
+                    <input type="email" placeholder="Your Email" class="email">
+                    <textarea placeholder="Type your message..."></textarea>
+                    <div class="input-label">
+                        <input type="checkbox" name="copy-to-email">
+                        <label for="copy-to-email">Send a copy to my Email</label>
+                    </div>
+                    <button class="btn btn-big" type="submit">Send Email</button>
+                </form>
+            </div>
         </div>
         <div class="right-col">
-            <h1>Sign In Form</h1>
+            <div class="box">
+                <h1>Sign In Form</h1>
+                <form action="" class="sign-in">
+                    <input type="text" placeholder="Username" class="username">
+                    <input type="password" placeholder="Password" class="password">
+                    <div class="input-label pull-left">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <button class="btn btn-small pull-right" type="submit">Sign in</button>
+                </form>
+            </div>
 
-            <h1>Recover Form</h1>
+            <div class="box">
+                <h1>Recover Form</h1>
+                <form action="" class="recover">
+                    <input type="email" placeholder="Enter your Email" class="email">
+                    <input type="number" placeholder="Enter your Phone number" class="phone">
+                    <button class="btn btn-small pull-left" type="submit">Send</button>
+                    <button class="btn btn-small pull-right btn-disabled" type="submit" disabled="">Done</button>
+                </form>
+            </div>
 
-            <h1>Subscribe Form</h1>
+            <div class="box">
+                <h1>Subscribe Form</h1>
+                <form action="" class="subscribe">
+                    <input type="email" placeholder="Enter your Email" class="email">
+                    <button class="btn btn-small pull-left" type="submit">Subscribe</button>
+                    <button class="btn btn-small pull-right btn-no" type="submit">No, Thanks</button>
+                </form>
+            </div>
 
             <footer>
                 <img src="img/footer_logo.png" alt="Masteralb.com  footer logo">
             </footer>
         </div>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
