@@ -7,7 +7,7 @@ body {
     background-image: url(../img/Free-Webform.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    font-family: sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 header {
@@ -42,7 +42,8 @@ header {
     margin-bottom: 60px;
     h1 {
         text-align: center;
-        font-size: 32px;
+        font-size: 36px;
+        font-weight: 300;
         color: #fff;
         text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
         margin-bottom: 60px;
@@ -70,15 +71,22 @@ form {
         z-index: -1;
         }
     &>input {
+        font-family: 'Titillium Web', sans-serif;
+        letter-spacing: 1px;
         width: 268px;
         margin-bottom: 25px;
         line-height: 18px;
         font-size: 18px;
+        outline: none;
     }
 }
 
-.sing-up, .send-mail {
+.sing-up {
     height: 415px;
+}
+
+.send-mail {
+    height: 455px;
 }
 
 .sign-in, .recover {
@@ -94,9 +102,9 @@ form {
         display: inline;
     }
     & .sign-in-checkbox {
-            font-size: 16px;
-            line-height: 16px;
-        } line-height: 16px;
+            font-size: 17px;
+            line-height: 17px;
+        }
     &>label {
         display: inline;
         font-size: 20px;
@@ -104,12 +112,35 @@ form {
         color: #aaa;
         padding-left: 5px;
     }
-    & #remember-me {
-        margin-top:10px;
-    }
+}
+.sign-in div:first-of-type {
+    padding-top: 10px;
 }
 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
 
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin: -2px 5px 0 -5px;
+    border: solid 1px #c3c3c3;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background: url(../img/checked.png) center no-repeat;
+}
 
 input[type="text"],[type="password"], [type="email"], [type="number"] {
     height: 40px;
@@ -145,8 +176,10 @@ input[type="text"],[type="password"], [type="email"], [type="number"] {
 }
 
 textarea {
-    height: 160px;
+    height: 200px;
+    max-height: 200px;
     width: 308px;
+    max-width: 308px;
     border: solid 1px #c3c3c3;
     border-radius: 3px;
     padding-top: 10px;
@@ -154,7 +187,7 @@ textarea {
     padding-right: 10px;
     margin-bottom: 20px;
     font: inherit;
-    color: #aaa;
+    outline: none;
 }
 
 select {
@@ -172,16 +205,25 @@ select {
     padding-left: 50px;
     font: inherit;
     color: #aaa;
+    outline: none;
     margin-bottom: 20px;
+}
+
+input, select, textarea {
+    &:focus {
+    box-shadow: 0px 0px 5px 1px #93d02b;
+    }
 }
 
 .btn {
     height: 40px;
     background-color: #93d02b;
-    border: 1px solid #93d02b;
+    border: 1px solid #3b9a00;
     border-radius: 5px;
     color: #fff;
+    outline: none;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px -20px 90px -30px rgba(0,0,0,0.2);
     &-big {
         width: 330px;
         height: 45px;
@@ -196,13 +238,15 @@ select {
     }
     &-no {
     background-color: #f4495b;
-    border-color: #f4495b;
+    border-color: #a2202a;
     }
     &-disabled {
     opacity: 0.6;
     }
+    &:hover {
+        box-shadow: inset 0px -20px 90px -30px rgba(0,0,0,0.4);
+    }
 }
-
 
 footer {
     opacity: .5;
