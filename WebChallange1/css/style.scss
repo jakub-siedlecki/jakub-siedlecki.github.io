@@ -93,11 +93,11 @@ form {
     &>input {
         display: inline;
     }
-    &>label {
-        &:first-of-type {
+    & .sign-in-checkbox {
             font-size: 16px;
             line-height: 16px;
-        }
+        } line-height: 16px;
+    &>label {
         display: inline;
         font-size: 20px;
         line-height: 20px;
@@ -108,6 +108,8 @@ form {
         margin-top:10px;
     }
 }
+
+
 
 input[type="text"],[type="password"], [type="email"], [type="number"] {
     height: 40px;
@@ -156,8 +158,12 @@ textarea {
 }
 
 select {
-    background-image: url(../img/icon_select.png);
-    background-position: 5% center;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background: transparent;
+    background-image: url(../img/icon_select.png), url(../img/icon_arrow.png);
+    background-position: 5% center, 95% center;
     background-repeat: no-repeat;
     height: 40px;
     width: 330px;

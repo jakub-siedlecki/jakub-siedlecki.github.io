@@ -73,19 +73,21 @@ form {
 .subscribe {
   height: 110px; }
 
-.input-label > input {
-  display: inline; }
-.input-label > label {
-  display: inline;
-  font-size: 20px;
-  line-height: 20px;
-  color: #aaa;
-  padding-left: 5px; }
-  .input-label > label:first-of-type {
+.input-label {
+  line-height: 16px; }
+  .input-label > input {
+    display: inline; }
+  .input-label .sign-in-checkbox {
     font-size: 16px;
     line-height: 16px; }
-.input-label #remember-me {
-  margin-top: 10px; }
+  .input-label > label {
+    display: inline;
+    font-size: 20px;
+    line-height: 20px;
+    color: #aaa;
+    padding-left: 5px; }
+  .input-label #remember-me {
+    margin-top: 10px; }
 
 input[type="text"], [type="password"], [type="email"], [type="number"] {
   height: 40px;
@@ -128,8 +130,12 @@ textarea {
   color: #aaa; }
 
 select {
-  background-image: url(../img/icon_select.png);
-  background-position: 5% center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url(../img/icon_select.png), url(../img/icon_arrow.png);
+  background-position: 5% center, 95% center;
   background-repeat: no-repeat;
   height: 40px;
   width: 330px;
