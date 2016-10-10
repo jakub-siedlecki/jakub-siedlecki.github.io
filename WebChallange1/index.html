@@ -25,10 +25,10 @@
             <div class="box">
                 <h1>Register Form</h1>
                 <form action="" class="sign-up">
-                    <input type="text" placeholder="Username" class="username">
-                    <input type="password" placeholder="Password" class="password">
-                    <input type="password" placeholder="Confirm Password" class="password">
-                    <input type="email" placeholder="Email" class="email">
+                    <input type="text" placeholder="Username" class="username" required="required">
+                    <input type="password" placeholder="Password" class="password" required="required">
+                    <input type="password" placeholder="Confirm Password" class="password" required="required">
+                    <input type="email" placeholder="Email" class="email" required="required">
                     <select name="Your Location">
                         <option value="Your Location">Your Location</option>
                         <option value="Europe">Europe</option>
@@ -36,7 +36,7 @@
                         <option value="Azja">Azja</option>
                     </select>
                     <div class="input-label">
-                        <input type="checkbox" id="terms-of-use">
+                        <input type="checkbox" id="terms-of-use" required="required">
                         <label for="terms-of-use" class="sign-in-checkbox"><span></span>I have read and accept the terms of use</label>
                     </div>
                     <button class="btn btn-big" type="submit">Sign up</button>
@@ -46,8 +46,8 @@
             <div class="box">
             <h1>Send Email</h1>
                 <form action="" class="send-mail">
-                    <input type="text" placeholder="Your Name" class="username">
-                    <input type="email" placeholder="Your Email" class="email">
+                    <input type="text" placeholder="Your Name" class="username" required="required">
+                    <input type="email" placeholder="Your Email" class="email" required="required">
                     <textarea placeholder="Type your message..."></textarea>
                     <div class="input-label">
                         <input type="checkbox" id="copy-to-email">
@@ -61,8 +61,8 @@
             <div class="box">
                 <h1>Sign In Form</h1>
                 <form action="" class="sign-in">
-                    <input type="text" placeholder="Username" class="username">
-                    <input type="password" placeholder="Password" class="password">
+                    <input type="text" placeholder="Username" class="username" required="required">
+                    <input type="password" placeholder="Password" class="password" required="required">
                     <div class="input-label pull-left">
                         <input type="checkbox" id="remember-me">
                         <label for="remember-me"><span></span>Remember me</label>
@@ -74,8 +74,8 @@
             <div class="box">
                 <h1>Recover Form</h1>
                 <form action="" class="recover">
-                    <input type="email" placeholder="Enter your Email" class="email">
-                    <input type="number" placeholder="Enter your Phone number" class="phone">
+                    <input type="email" placeholder="Enter your Email" class="email" required="required">
+                    <input type="number" placeholder="Enter your Phone number" class="phone" required="required">
                     <button class="btn btn-small pull-left" type="submit">Send</button>
                     <button class="btn btn-small pull-right btn-disabled" type="submit" disabled="">Done</button>
                 </form>
@@ -84,7 +84,7 @@
             <div class="box">
                 <h1>Subscribe Form</h1>
                 <form action="" class="subscribe">
-                    <input type="email" placeholder="Enter your Email" class="email">
+                    <input type="email" placeholder="Enter your Email" class="email" required="required">
                     <button class="btn btn-small pull-left" type="submit">Subscribe</button>
                     <button class="btn btn-small pull-right btn-no" type="submit">No, Thanks</button>
                 </form>
