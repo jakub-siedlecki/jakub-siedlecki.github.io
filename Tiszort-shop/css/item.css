@@ -1,0 +1,71 @@
+header {
+    min-height: 30vh;
+}
+
+header .header-content {
+    padding-top: 100px;
+}
+
+img {
+    width: 550px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom:  30px;
+
+}
+.container {
+}
+
+.simpleCart_shelfItem > h2 {
+    font-size: 54px;
+}
+
+.simpleCart_shelfItem > p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.simpleCart_shelfItem > p > input {
+    margin: 10px;
+    color: #333;
+    width: 250px;
+}
+
+.simpleCart_shelfItem > .text-color {
+    color: #ed4b29;
+    font-size: 24px;
+}
+
+.simpleCart_shelfItem > p > .item_price {
+    font-weight: 700;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 60px;
+    color: #333;
+    margin-left: 60px;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+select {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(../images/select.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #333;
+   font-size: 16px;
+   margin: 10px;
+   padding: 5px 10px;
+   width: 200px;
+   height: 40px;
+}

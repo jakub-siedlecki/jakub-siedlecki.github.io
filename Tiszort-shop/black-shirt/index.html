@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Online_Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/item.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-fire"></span> Tiszort</a>
+        </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#shop-basket" class="shop-basket"><span class="glyphicon glyphicon-shopping-cart "></span> <span class="simpleCart_quantity"></span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="shop-basket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel">Koszyk <span class="showIfEmpty">jest pusty</span></h4>
+      </div>
+
+    <div class="hideIfEmpty">
+            <div class="modal-body">
+                <div class="simpleCart_items"></div>
+
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Łącznie</th>
+                      <th>Koszty przesyłki</th>
+                      <th>Do zapłaty</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><div class="simpleCart_total"></div></td>
+                      <td><div class="simpleCart_shipping"></div></td>
+                      <td><div class="simpleCart_grandTotal"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+          <div class="modal-footer">
+            <!-- button to empty the cart -->
+            <a href="javascript:;" class="simpleCart_empty btn btn-default">Opróżnij koszyk</a>
+            <!-- create a checkout button -->
+            <a href="javascript:;" class="simpleCart_checkout btn btn-orange">Złóż zamówienie</a>
+          </div>
+    </div>
+</div>
+</div>
+</div>
+
+<header>
+        <div class="header-content">
+
+        </div>
+    </header>
+
+<section id="item">
+    <div class="container">
+
+        <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-7 text-center">
+                            <img src="../images/black.jpg" alt="t-shirt black" class="img-responsive">
+                     </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-5">
+                        <div class="simpleCart_shelfItem">
+                            <h2 class="item_name">Black T-shirt</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quo repudiandae impedit quia similique magni velit, nesciunt facilis, consequuntur praesentium sequi fugiat non dolores sint, corrupti et totam laudantium exercitationem aliquam eveniet deleniti sit, voluptate.</p><br />
+                            <p class="text-color">Cena: <span class="item_price">16.99zł</span><br />
+                            Rozmiar:
+                                <select class="item_size">
+                                <option value="Small"> Small </option>
+                                <option value="Medium"> Medium </option>
+                                <option value="Large"> Large </option>
+                            </select><br />
+                            Ilość:
+                            <input type="number" value="1" min="0" id="Qty" class="item_Quantity"><br />
+                            <a class="item_add btn btn-orange" href="javascript:;" role="button">Do koszyka</a></p>
+                        </div>
+                    </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <p> Nasi sponsorzy </p>
+                    <span class="glyphicon glyphicon-th-large"></span><span class="glyphicon glyphicon-bitcoin"></span><br />
+                    <span class="glyphicon glyphicon-grain"></span><span class="glyphicon glyphicon-sunglasses"></span>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <p> Znajdz nas </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <p> Kontakt </p>
+                        <ul class="contact">
+                                <li><span class="glyphicon glyphicon-phone-alt"></span> 66 7778889</li>
+                                <li>Tiszort</li>
+                                <li>Gwarna 5</li>
+                                <li>61-616 Poznań</li>
+                                <li>Czynne od pn. do pt.</li>
+                                <li>od 10:00 do 19:00</li>
+                                <li><span class="glyphicon glyphicon-envelope"></span> contact@siedlecki.com </li>
+                        </ul>
+            </div>
+        </div>
+    </div>
+<p class="pull-right">Made with <span class="glyphicon glyphicon-heart-empty"></span> by Jakub Siedlecki</p>
+</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- simpleCart -->
+    <script src="../js/simpleCart.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
