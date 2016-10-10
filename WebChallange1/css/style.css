@@ -229,5 +229,58 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 60px; } }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    justfy-content: center; }
+    header img {
+      height: 80%;
+      width: 80%; }
+
+  .username, .password, .email, .phone {
+    width: 70%; }
+
+  select {
+    width: 100%; }
+
+  textarea {
+    width: 90%; }
+
+  .col {
+    justify-content: center; }
+    .col .box, .col form {
+      width: 80%; }
+
+  .btn {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%; }
+
+  .sign-up {
+    height: 440px; }
+
+  .send-mail {
+    height: 485px; }
+
+  .sign-in {
+    height: 210px; }
+
+  .recover {
+    height: 230px; }
+
+  .subscribe {
+    height: 165px; }
+
+  .sign-in div:first-of-type {
+    padding: 0;
+    margin-bottom: 20px; }
+
+  footer {
+    display: flex;
+    justify-content: center; }
+    footer img {
+      width: 80%;
+      height: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
