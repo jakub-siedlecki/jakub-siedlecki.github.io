@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../img/Free-Webform.jpg);
+    background-image: url(../img/bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-family: 'Titillium Web', sans-serif;
@@ -75,8 +75,8 @@ form {
         letter-spacing: 1px;
         width: 268px;
         margin-bottom: 25px;
-        line-height: 18px;
-        font-size: 18px;
+        line-height: 20px;
+        font-size: 20px;
         outline: none;
     }
 }
@@ -204,6 +204,8 @@ select {
     border-radius: 3px;
     padding-left: 50px;
     font: inherit;
+    font-size: 20px;
+    line-height: 20px;
     color: #aaa;
     outline: none;
     margin-bottom: 20px;
