@@ -115,8 +115,8 @@ $(document).ready(function() {
         secondSlot.start();
         thirdSlot.start();
 
-        $("#stop").attr("disabled", true);
         setTimeout(function() {$("#stop").removeAttr("disabled"); }, 2000);
+        $("#start").attr("disabled", true);
         });
 
     $('#stop').click(function() {
@@ -125,5 +125,6 @@ $(document).ready(function() {
         thirdSlot.stop();
 
         $("#stop").attr("disabled", true);
+        setTimeout(function() {$("#start").removeAttr("disabled"); }, 1500);
         });
 });
