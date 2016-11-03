@@ -97,7 +97,7 @@ $(document).ready(function() {
             // 'background-position-x': "center",
             backgroundPosition:"(" + bgPos + ")"
         }, {
-            duration: 200,
+            duration: 150,
             complete: function() {
                 completed ++;
             }
