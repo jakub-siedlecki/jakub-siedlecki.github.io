@@ -1,39 +1,19 @@
 $(document).ready(function() {
     var completed = 0,
         imgHeight = 1200;
-        // posArr = [
-        //     0, //orange
-        //     80, //number 7
-        //     165, //bar
-        //     237, //guava
-        //     310, //banana
-        //     378, //cherry
-        //     454, //orange
-        //     539, //number 7
-        //     624, //bar
-        //     696, //guava
-        //     769, //banana
-        //     837, //cherry
-        //     913, //orange
-        //     1000, //number 7
-        //     1085, //bar
-        //     1157, //guava
-        //     1230, //banana
-        //     1298 //cherry
-        // ];
         posArr = [
             10, // banana
             110, // orange
             210, // cherry
-            310, // wattermelon
+            310, // watermelon
             410, // banana
             510, // orange
             610, // cherry
-            710, // wattermelon
+            710, // watermelon
             810, // banana
             910, // orange
             1010, // cherry
-            1110 // wattermelon
+            1110 // watermelon
         ];
 
     /* constructor */
@@ -46,7 +26,7 @@ $(document).ready(function() {
 
         $(el).pan({
             fps:50,
-            dir:'down'
+            dir:'down' // direction
         });
         $(el).spStop();
     }
