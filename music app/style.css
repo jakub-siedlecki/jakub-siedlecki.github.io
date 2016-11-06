@@ -16,7 +16,9 @@ body {
 }
 
 .navbar-light .navbar-brand,
-.navbar-light .navbar-toggler {
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
     color: #5cb85c;
 }
 
