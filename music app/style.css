@@ -1,0 +1,102 @@
+body {
+    overflow: hidden;
+    background-color: rgba(17,17,17, .9);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #777;
+}
+
+.navbar-brand {
+    padding-left: 50px;
+
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-toggler {
+    color: #5cb85c;
+}
+
+.navbar {
+    z-index: 999;
+    border-radius: 0;
+    box-shadow: -1px 1px 10px #000;
+}
+
+h2 {
+    margin: 0 auto;
+    margin-top: 35vh;
+    font-family: Open Sans, sans-serif;
+    font-size: 50px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.album-card > img {
+    width: 100%;
+}
+
+.album-card:hover {
+    z-index: 100;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.card-list .album-card {
+    background-color: #000;
+}
+
+.card-list .album-card > img {
+    transition: .3s opacity;
+}
+
+.card-list:hover .album-card > img {
+    opacity: .3;
+}
+
+.card-list:hover .album-card:hover > img {
+    opacity: 1;
+}
+
+.card-list .album-card {
+    width: 26%;
+    overflow: hidden;
+    position: relative;
+}
+
+ .album-card .caption-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: #eee;
+    text-overflow: ellipsis;
+    padding: 1.25em;
+    opacity: 0;
+    transition: top .2s ease-out, opacity .4s ease-out;
+}
+
+.album-card:hover .caption-block,
+.album-card.selected .caption-block {
+    top: 70%;
+    opacity: 1;
+}
+
+.caption-block .card-title {
+    margin-bottom: 7px;
+}
+
+.caption-block .card-artist {
+    color: #777;
+}

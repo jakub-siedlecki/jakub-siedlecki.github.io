@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Music App</title>
+        <!-- Bootstrap CSS -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#" id="home">Find your music</a>
+        <form class="form-inline float-xs-right search-form">
+            <input class="form-control" type="text" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div id="main">
+        <div class="card-list">
+            <h2>Witaj! Wyszukaj frazę aby rozpocząć.</h2>
+        </div>
+    </div>
+
+    <script type="text/html" id="album-template">
+        <div class="album-card">
+            <img src="http://placehold.it/200/200" alt="Card image cap">
+            <div class="caption-block">
+                <h5 class="card-title">Card title</h5>
+                <span class="card-artist">Card artist</span>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
