@@ -125,13 +125,6 @@ nav.navbar {
     background-color: #333;
     margin-top: 0px; }
 
-a.navbar-brand {
-  background-image: url("../img/1.png");
-  background-repeat: no-repeat;
-  height: 75px;
-  width: 200px;
-  margin-top: 5px; }
-
 .nav.navbar-nav.pull-right li a {
   font-size: 24px;
   text-transform: uppercase;
@@ -154,11 +147,26 @@ footer {
 /* ==========================================================================
    @media queries
    ========================================================================== */
+@media (max-width: 900px) {
+  .header-text > h1 {
+    font-size: 50px; }
+  .header-text p {
+    font-size: 16px; }
+
+  section h3 {
+    font-size: 30px; } }
 @media (min-width: 992px) {
   .collapse.navbar-collapse ul {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate3d(-80%, -50%, 0); } }
+    transform: translate3d(-80%, -50%, 0); }
+
+  a.navbar-brand {
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 200px;
+    margin-top: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
