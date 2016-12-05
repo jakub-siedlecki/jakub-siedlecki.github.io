@@ -148,9 +148,6 @@ section {
     display: flex;
     justify-content: center;
     margin-bottom: 30px; }
-  section .row {
-    display: flex;
-    justify-content: center; }
 
 #about p {
   text-align: right;
@@ -222,10 +219,27 @@ section {
   height: 80px;
   width: 80px; }
 
+.git {
+  position: absolute;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 50%; }
+  .git img {
+    margin-top: -1px;
+    margin-left: -1px;
+    height: 102px;
+    width: 102px; }
+
 footer {
   margin-top: 60px;
   height: 400px;
   background-color: #333; }
+
+.row {
+  display: flex;
+  justify-content: center; }
 
 .box {
   background-color: red;
@@ -233,21 +247,23 @@ footer {
   height: 250px;
   margin: 10px; }
 
-.item {
-  height: 150px;
-  width: 150px;
-  background-color: red;
-  margin: 10px; }
-
 /* ==========================================================================
    @media queries
    ========================================================================== */
-@media (max-width: 900px) {
+@media (max-width: 767px) {
+  #about p {
+    font-size: 18px; }
+
   .header-text > h1 {
     font-size: 50px; }
 
   section h3 {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; } }
 @media (max-width: 991px) {
   .me-img {
     display: none; } }

@@ -110,10 +110,6 @@ section {
         justify-content: center;
         margin-bottom: 30px;
     }
-    & .row {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 #about {
@@ -199,12 +195,29 @@ section {
     width: 80px;
 }
 
-
-
+.git {
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    & img {
+        margin-top: -1px;
+        margin-left: -1px;
+        height: 102px;
+        width: 102px;
+    }
+}
 footer {
     margin-top: 60px;
     height: 400px;
     background-color: #333;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 .box {
@@ -214,17 +227,13 @@ footer {
     margin: 10px;
 }
 
-.item {
-    height: 150px;
-    width: 150px;
-    background-color: red;
-    margin: 10px;
-}
-
 /* ==========================================================================
    @media queries
    ========================================================================== */
-@media(max-width:900px){ //phone and tablet
+@media(max-width:767px){ //phone and tablet
+    #about p {
+        font-size: 18px;
+    }
     .header-text {
         & > h1 {
             font-size: 50px;
@@ -235,10 +244,15 @@ footer {
             font-size: 30px;
         }
     }
+    .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
 // end @media phone
 }
 
-@media(max-width:991px){ //img query
+@media(max-width:991px){ //img hide query
     .me-img {
         display: none;
     }
