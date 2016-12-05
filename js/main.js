@@ -20,4 +20,16 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
 $('.owl-carousel').owlCarousel({
     loop:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
 })
