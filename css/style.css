@@ -280,12 +280,9 @@ section {
   opacity: 1; }
 
 .gitacc {
-  margin: 10px;
+  margin: 30px;
   height: 80px;
-  width: 80px;
-  color: #fff; }
-  .gitacc:hover {
-    color: #000; }
+  width: 80px; }
 
 footer {
   height: 50px;
