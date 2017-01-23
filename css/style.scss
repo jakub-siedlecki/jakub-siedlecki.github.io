@@ -103,6 +103,19 @@ section {
         padding-top: 79px;
         margin-top: 1px;
     }
+    &:last-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        margin-top: 60px;
+        padding-top: 60px;
+        min-height: 300px; 
+        color: #fff;
+        p {
+            
+        }
+    }
     h3 {
         font-size: 52px;
         text-transform: uppercase;
@@ -195,6 +208,10 @@ section {
     width: 80px;
 }
 
+.gulp > img {
+    width: 80px;
+}
+
 .git {
     position: absolute;
     z-index: 1;
@@ -209,22 +226,65 @@ section {
         width: 102px;
     }
 }
-footer {
-    margin-top: 60px;
-    height: 400px;
-    background-color: #333;
+
+.projects-wrapper {
+    & div {
+    padding: 0;
+    }
 }
 
-.row {
+.projects-caption {
+    position: relative;
+    padding: 0;
+    margin: 10px;
+}
+
+.projects-caption img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.projects-caption-text {
+    opacity: 0;
+    position: absolute;
     display: flex;
     justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.7);
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
 
-.box {
-    background-color: red;
-    width: 300px;
-    height: 250px;
+.projects-caption:hover .projects-caption-text {
+    opacity: 1;
+}
+
+.gitacc {
     margin: 10px;
+    height: 80px;
+    width: 80px;
+    color: #fff;
+    &:hover {
+        color: #000;
+    }
+}
+
+footer {
+    height: 50px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ==========================================================================
@@ -267,7 +327,7 @@ footer {
 }
 
 a.navbar-brand {
-    background-image: url('../img/logo.png'); //https://unsplash.com/collections/409130/web-programming?photo=5Ntkpxqt54Y
+    background-image: url('../img/logo.png'); //https://unsplash.com/collections/409130/web-§gramming?photo=5Ntkpxqt54Y
     background-repeat: no-repeat;
     height: 75px;
     width: 200px;
