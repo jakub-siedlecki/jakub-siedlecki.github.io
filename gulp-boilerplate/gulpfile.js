@@ -77,7 +77,7 @@ gulp.task('browserSync', function() {
 
 // SASS
 gulp.task('sass', function() {
-  return gulp.src(folder.src + 'sass/*.sass') // Gets all files ending with .scss in src/scss
+  return gulp.src(folder.src + 'sass/*.scss') // Gets all files ending with .scss in src/scss
     .pipe(sass())
     .pipe(gulp.dest(folder.src + 'css'))
     .pipe(browserSync.reload({
@@ -88,7 +88,7 @@ gulp.task('sass', function() {
 
 // browserSync and sass watcher
 gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch(folder.src + 'sass/**/*.sass', ['sass']); 
+  gulp.watch(folder.src + 'sass/**/*.scss', ['sass']); 
   // Reloads the browser whenever HTML or JS files change
   gulp.watch(folder.src + '*.html', browserSync.reload); 
   gulp.watch(folder.src + 'js/**/*.js', browserSync.reload); 
