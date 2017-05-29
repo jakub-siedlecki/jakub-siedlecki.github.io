@@ -1,1 +1,35 @@
+/*
 
+Project:	   
+Version:	   1.0
+Author: 
+
+===================================================================================
+Table of Contents
+===================================================================================
+
+*/
+/** Grid **/
+/** Body **/
+/** Colors **/
+/** Typography **/
+/* bugfix */
+@media (min-width: 544px) {
+  .clear {
+    clear: both; } }
+
+@media (min-width: 768px) {
+  .clear {
+    clear: both; } }
+
+@media (min-width: 992px) {
+  .clear {
+    clear: both; } }
+
+@media (min-width: 1200px) {
+  .clear {
+    clear: both; } }
+
+@media (min-width: 1600px) {
+  .clear {
+    clear: both; } }

@@ -1,4 +1,5 @@
-
 Tiszort-shop/.bash_profile.save
-
 Tiszort-shop/.bash_profile.save
+.DS_Store
+node_modules
+gulp-boilerplate-old

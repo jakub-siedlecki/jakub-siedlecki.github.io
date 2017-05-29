@@ -1,0 +1,47 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+/** Grid **/
+$grid-columns:      12;
+$grid-gutter-width: 20px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 544px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px,
+  //Extra x2 large screen
+  xxl: 1600px
+);
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px,
+  xxl:1280px
+);
+
+/** Body **/
+$body-bg:          #fff !default;
+$body-color:       #00000c;
+$font-size-base:   1rem;
+
+/** Colors **/
+$brand-danger:     #a61624;
+$brand-success:    #518f44;
+$brand-warning:    #b3091c;
+$link-color:       #000;
+
+/** Typography **/
+$font-family-base:        'Montserrat', sans-serif;
+
+$link-hover-decoration: none;

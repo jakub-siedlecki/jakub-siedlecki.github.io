@@ -1,0 +1,50 @@
+/*
+
+Project:	   
+Version:	   1.0
+Author: 
+
+===================================================================================
+Table of Contents
+===================================================================================
+
+*/
+//boostrap variables & mixins
+@import "vendor/bootstrap-4.0.0-alpha.4/_custom";
+@import "vendor/bootstrap-4.0.0-alpha.4/_variables";
+@import "vendor/bootstrap-4.0.0-alpha.4/_mixins";
+@import "vendor/bootstrap-sass-3.3.7/bootstrap/_mixins";
+
+//partials 
+@import "partials/one.scss";
+
+/* bugfix */
+@include media-breakpoint-up(sm) {
+  .clear {
+    clear: both;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .clear {
+    clear: both;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .clear {
+    clear: both;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .clear {
+    clear: both;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .clear {
+    clear: both;
+  }
+}
