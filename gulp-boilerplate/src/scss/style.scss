@@ -16,7 +16,11 @@ Table of Contents
 @import "vendor/bootstrap-sass-3.3.7/bootstrap/_mixins";
 
 //partials 
-@import "partials/example.scss";
+@import "partials/globals.scss";
+@import "partials/header.scss";
+@import "partials/nav.scss";
+@import "partials/main.scss";
+@import "partials/footer.scss";
 
 /* bugfix */
 @include media-breakpoint-up(sm) {
