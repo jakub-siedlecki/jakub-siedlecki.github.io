@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600,700,900&subset=latin-ext');
+
+$blue: #2585fd;
+$robo:'Roboto', sans-serif;
+$mont: 'Montserrat', sans-serif;
+
+body {
+	font-family: $robo;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $mont;
+	font-weight: bold;
+}
+
+@mixin placeholder-color($color) {
+	&::-webkit-input-placeholder { 
+	  color: $color;
+	}
+	&::-moz-placeholder { 
+	  color: $color;
+	}
+	&:-ms-input-placeholder {
+	  color: $color;
+	}
+	&:-moz-placeholder { 
+	  color: $color;
+	}
+}
+
+// iphone inputs reset 
+textarea, input[type="text"], input[type="email"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
